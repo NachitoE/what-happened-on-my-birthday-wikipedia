@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Cossette+Titre:wght@400;700&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+@import "tailwindcss";
+
+.font-cosette-titre {
+    font-family: 'Cossette Titre', sans-serif;
+}
