@@ -8,7 +8,6 @@ import "./index.css";
 function App() {
   const [month, setMonth] = useState(1);
   const [day, setDay] = useState(1);
-  const [dateString, setDateString] = useState("");
   const [dateEvents, setDateEvents] = useState([]);
   const [randomEvent, setRandomEvent] = useState({ description: "", year: "" });
   const [dateEventsCache, setDateEventsCache] = useState<Record<string, any>>(
@@ -44,7 +43,6 @@ function App() {
     setDateEvents(events);
     setRandomEvent(events[Math.floor(Math.random() * dateEvents.length)]);
     console.log(randomEvent);
-    setDateString(getFormattedDate(month, day));
   };
 
   const addToCache = (m: number, d: number, events: any) => {
